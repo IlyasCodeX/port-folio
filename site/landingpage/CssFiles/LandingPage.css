@@ -38,19 +38,19 @@ body.light{
 }
 @font-face {
     font-family: 'inter';
-    src: url(../../../Learning/fonts/InterTight-VariableFont_wght.ttf)
+    src: url(../../Learning/fonts/InterTight-VariableFont_wght.ttf)
 }
 @font-face{
     font-family: 'sequel';
-    src: url(../../../Learning/fonts/ArchivoBlack-Regular.ttf)
+    src: url(../../Learning/fonts/ArchivoBlack-Regular.ttf)
 }
 @font-face{
     font-family: 'tec';
-    src: url(../../../Learning/fonts/BBHBartle-Regular.ttf);
+    src: url(../../Learning/fonts/BBHBartle-Regular.ttf);
 }
 @font-face{
     font-family: 'other';
-    src: url(../../../Learning/fonts/Sekuya-Regular.ttf);
+    src: url(../../Learning/fonts/Sekuya-Regular.ttf);
 }
 /* .light .center{
     box-shadow: 
