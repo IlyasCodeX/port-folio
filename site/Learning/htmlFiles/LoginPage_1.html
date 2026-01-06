@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>
+  test</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+  @font-face{
+    font-family: 'sequel';
+    src: url(../fonts/ArchivoBlack-Regular.ttf)
+  }
+  @font-face{
+    font-family: 'tec';
+    src: url(../fonts/BBHBartle-Regular.ttf)
+  }
+  @keyframes sugiu {
+  0% {border-color: #e74c3c; box-shadow: 0 0 10px rgba(231, 76, 60, 0.7); transform: translateY(150px) translateZ(0px); text-shadow: 0 -5px 5px red;}
+  100% {border-color: #e74c3c; box-shadow: 0 0 10px rgba(231, 76, 60, 0.7); transform: translateY(-150px) translateZ(70px); text-shadow: 0 5px 5px rgba(255,255,255,1);}
+  }
+  @keyframes dxsx {
+  from {border-color: #e74c3c; box-shadow: 0 0 10px rgba(231, 76, 60, 0.7); transform: translateX(0); text-shadow: 0 0 5px rgba(255,255,255,0.8);}
+  to {border-color: #e74c3c; box-shadow: 0 0 10px rgba(231, 76, 60, 0.7); transform: translateX(150px); text-shadow: -5px 0 5px rgba(255,255,255,1);}
+  }
+  @keyframes scale {
+    0% {text-shadow: 0 5px 10px red,  0 5px 20px red,  0 5px 30px red  ;}
+    33% {text-shadow: 5px 5px 10px green, 5px 5px 20px green , 5px 5px 30px green;}
+    66% {text-shadow: 0px -5px 10px blue, 5px 0 20px blue, 5px 0 30px blue ;}
+    75% {text-shadow: -5px 5px 10px yellow, -5px 5px 20px yellow , -5px 5px 30px yellow;}
+    100% {text-shadow: 0 5px 10px red , 0 5px 20px red,  0 5px 30px red  ;}
+  }
+  @keyframes spin {
+  from { transform: scale(1);}
+  to { transform: scale(1.05);}
+}
+
+  .icons {
+    display:inline;
+    position: absolute;
+    top:70vh;
+    left:15vh;
+  }
+  .icon{
+    margin-left:20px;
+    border-radius: 10px;
+    width: 50px;
+  }
+  .dxsx {
+  background: rgba(255,255,255,0.2);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border:2px solid rgba(255,255,255,0.2);
+  /* border-image: linear-gradient(to right, yellow, red) 1; */
+  border-radius: 50%0%50%0%; 
+  font-size: 35px;
+  width: 400px;
+  position: absolute;
+  top:85px;
+  box-shadow: 
+  inset 0 0 25px 3px rgb(136, 12, 207);
+  left: 800px;
+  outline: 3px  solid black;
+  outline-offset: -13px;
+  height: 500px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  }
+  .u1 {
+    font-size: 20px;
+    position: absolute;
+    top:100px;
+    left: 50px;
+    font-family: 'sequel';
+  }
+  /* .username {
+    position: absolute;
+    top:150px;
+    left: 15px;
+    width:300px;
+    border-radius: 12px;
+    border:2px solid black;
+    padding:30px; 
+  }*/
+  .p1 {
+    font-size: 20px;
+    position: absolute;
+    top:220px;
+    left: 50px;
+    font-family: 'sequel';
+  }
+  /* .password {
+    position: absolute;
+    top:270px;
+    left: 15px;
+    width:300px;
+    border-radius: 12px;
+    border:2px solid black;
+    padding:30px;
+  } */
+  .button {
+    padding: 15px;
+    width: 250px;
+    border-radius: 15px;
+    background-color: rgb(62, 149, 203);
+    font-size: 24px;
+    height: 70px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    position:absolute;
+    top:360px;
+    left:90px;
+    transform: scale(1);
+    transition: transform 0.3s;
+    cursor: pointer;
+    animation: scale 3s ease-in-out infinite alternate forwards;
+  }
+  .button:hover {
+    transform: scale(1.15);
+  }
+  .account {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 430px;
+    left: 150px;
+    line-height: 1;
+  }
+  .register {
+    font-size: 15px;
+    position: absolute;
+    top: 480px;
+    left: 190px;
+    color: black;
+  }
+  .h1 {
+    color: black;
+    font-family: 'sequel' ;
+    font-weight: bolder;
+    font-size: 90px;
+    text-shadow: 
+    0 0 20px white,
+    0 0 40px white,
+    0 0 60px white,
+    0 0 80px white;
+    -webkit-text-stroke: 2px black;
+    position: absolute;
+    left: 130px;
+    top:50px;
+    line-height: 1;
+  }
+  .h3 {
+    color : white;
+    font-family: 'sequel';
+    position: absolute;
+    top: 300px;
+    left: 130px;
+    font-size: 30px;
+    text-shadow: 0px 0px 30px orangered;
+  }
+  .h12 {
+    letter-spacing: 5px;
+    color: white;
+    position:absolute;
+    top: 30px;
+    left: 160px;
+    font-size: 30px;
+    -webkit-text-stroke: 2px black;
+    font-family: 'tec';
+  }
+  /* .sugiu {
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border:2px solid black;
+  border-radius: 10050000000px;
+  color: black;
+  font-size: 45px;
+  width: 250px;
+  position: relative;
+  height: 250px;
+  position: absolute;
+  top:200px;
+  left: 350px;
+  padding: 20px;
+  margin: 10px;
+  z-index: -1;
+  text-align: center;
+  animation : sugiu 1s ease-in-out infinite alternate forwards;
+  }
+  .tred {
+  perspective: 800px;
+  } */
+  /* body {
+  background-image: url('https://imgs.search.brave.com/F5CvXXoqWv5EFpBHRmprcnR__0VEnIc_ac9mocvd9Zw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjQy/Mzk1MTY0L3ZpZGVv/L2Fic3RyYWN0LW1l/dGFiYWxsLWJhY2tn/cm91bmQtdmlvbGV0/LmpwZz9iPTEmcz02/NDB4NjQwJms9MjAm/Yz1XU0lDUWJ2MWR1/UUNVc1RvZHZuX0NW/bGxOX3k5Zkc5X1lJ/LXp6WTNTbjJzPQ');
+  margin: 0;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+}*/
+.video 
+{
+  object-fit: cover;
+}
+.username {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  width: 300px;
+}
+.username::before {
+  content: "";
+  background: linear-gradient(rgb(24, 24, 226), rgb(59, 152, 183));
+  position: absolute;
+  width: 320px;
+  height: 53px;
+  border-radius: 14px;
+  animation: spin 1s ease-in-out infinite alternate forwards;
+}
+/* .username::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: rgb(177, 171, 171);
+  border-radius: 12px;
+} */
+.username input:hover{
+  transform: scale(1.05);
+}
+.username input{
+  transform: scale(1);
+    transition: transform 0.3s;
+    color: black;
+    background: rgb(177, 171, 171);
+    position: relative;
+    width:100%;
+    border-radius: 12px;
+    border:2px solid black;
+    padding:12px 10px;
+    font-size: 20px;
+    border: none;
+    z-index: 1;
+}
+
+.input1{
+    color: black;
+    background: rgb(177, 171, 171);
+    position: absolute;
+    top:270px;
+    left: 50px;
+    width:300px;
+    border-radius: 12px;
+    border:2px solid black;
+    padding:12px 10px;
+    font-size: 20px;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+.input1:hover {
+  transform: scale(1.05);
+}
+hr {
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  width: 80%;
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, green, blue);
+  border-radius: 3px;
+}
+.video-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+/* i{
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 250px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} */
+.password > i{
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  left:340px;
+  z-index: 1;
+  top: 285px;
+}
+.username > i {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  left:290px;
+  top: 15px;
+  z-index: 1;
+}
+
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* equivalente di background-size: cover */
+  object-position: center;
+}
+
+  </style>
+</head>
+<body>
+  <div class="video-bg">
+  <video autoplay muted loop playsinline>
+    <source src="http://cdn.auth0.com/website/homepage/background.mp4" type="video/mp4">
+  </video>
+</div>
+<i class="fa-solid fa-moon"></i>
+  <!-- <label>username: </label> -->
+  <div class ="dxsx">
+    <h1 class="h12">LOGIN</h1>
+    <hr>
+    <h3 class="u1">Username</h3>
+    <div class="username">
+      <input  type="text" id="eta" placeholder="Username...">
+      <i class="fa-solid fa-user"></i>
+    </div>
+  <h3 class="p1">Password</h3>
+  <div class=" password">
+    <input  class="input1" type="password" placeholder="Password...">
+    <i class="fa-solid fa-lock"></i>
+  </div>
+  <button onclick="controlla()" class="button" >Login</button>
+  <h2 class ="account">New to this <br>platform?</h2>
+  <h3 class="register">Register</h3>
+</div>
+<h1 class = "h1">Welcome<br>Back</h1>
+<h3 class = "h3">Please enter you Username <br>and Password to have a wonderful <br>experience with us.</h3>
+<div class= "icons">
+<img class= "icon" src="https://store-images.s-microsoft.com/image/apps.26737.9007199266244427.c75d2ced-a383-40dc-babd-1ad2ceb13c86.ed1d047e-03d9-4cd8-a342-c4ade1e58951">
+<img class ="icon" src ="https://imgs.search.brave.com/MkIe6uJTSNN9WjFDrNQJzHuOuF1pokg0hjjEjzmE8Sc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTYv/NzE2LzQ1MC9zbWFs/bC90aWt0b2staWNv/bi1mcmVlLXBuZy5w/bmc">
+<img class="icon" src ="https://imgs.search.brave.com/lrSNjEJkpHZEcpH3lfEkFqlLQxiARSeBF3_cXYfRrIw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTgv/OTMwLzU3Mi9zbWFs/bC95b3V0dWJlLWxv/Z28teW91dHViZS1p/Y29uLXRyYW5zcGFy/ZW50LWZyZWUtcG5n/LnBuZw" style="scale: 2;">
+<img class="icon" src ="https://imgs.search.brave.com/gjSEMlEX87a5TD3Qp66-y1B0SS_nCtRpAHM4KCJrx-8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvaW5zdGFncmFt/LWFwcC1pY29uXzEy/NzMzNzUtMTMyMi5q/cGc_c2VtdD1haXNf/aHlicmlkJnc9NzQw/JnE9ODA">
+</div>
+<div class="modes">
+</div>
+<!-- <div class="tred">
+<div class ="sugiu ">
+<h2> SU<br> GIU</h2>
+</div>
+</div> -->
+<script>
+function controlla()
+{
+    let eta = Number(document.getElementById("eta").value);
+    console.log(eta);
+
+if (eta >= 18){
+    alert("sei maggiorenne");
+}else{
+    alert("sei minorenne");
+}
+}
+</script>
+</body>
+</html>

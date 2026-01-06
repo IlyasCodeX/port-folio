@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes rotate {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(1440deg);}
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    width: 400px;
+    height: 450px;
+    border: solid black;
+}
+.login p{
+    font-size: 17px;
+}
+.input{
+    position: relative;
+    width: 93%;
+}
+.input input {
+    background: linear-gradient(
+        to right, rgb(57, 57, 221), rgb(46, 222, 249)
+    );
+    border: none;
+    padding : 16px 130px;
+    border-radius: 12px;
+    padding-left: 10px;
+}
+.input i{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 5%;
+}
+.button{
+    font-size: 25px;
+    color: white;
+    padding: 10px 10px;
+    width: 90%;
+    border-radius: 12px;
+    border: none;
+}
+.button::before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 60px;
+    background: conic-gradient(
+        from 140deg at 50% 50%,
+        transparent 0deg,
+        #00b7ff 60deg,
+        transparent 180deg,
+        transparent 195deg,
+        #ff30ff 195deg,
+        transparent 330deg,
+        transparent 375deg
+    );
+    z-index: 2;
+    animation: rotate 2s infinite;
+}

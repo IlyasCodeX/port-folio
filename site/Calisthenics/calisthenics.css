@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100% !important;
+    background-color: #D9C3A9;
+}
+@font-face{
+    font-family: 'hegarty';
+    src: url(../../Learning/fonts/BBHHegarty-Regular.ttf);
+}
+@font-face{
+    font-family: 'tec';
+    src: url(../../Learning/fonts/BBHBartle-Regular.ttf);
+}
+@font-face{
+    font-family: 'inter';
+    src: url(../../Learning/fonts/InterTight-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: 'Trade';
+    src: url(../../Learning/fonts/TradeWinds-Regular.ttf);
+}
+@keyframes rotateBg {
+    to {  transform: rotate(1080deg); }
+ }
+@keyframes shattering {
+    0% { transform: translateX(-450px) rotate(45deg); opacity: 1;}
+    20% {transform: translateX(450px) rotate(45deg); opacity: 1;}
+    /* 15% { transform: translateX(450px) rotate(45deg); opacity: 1;}
+    16% { opacity: 0;}
+    20% { opacity: 0;}
+    22% { transform: translateX(-450px) rotate(45deg); opacity: 1;}
+    40% { transform: translateX(450px) rotate(45deg); opacity: 1;} */
+    100% { transform: translateX(450px) rotate(45deg); opacity: 1;}
+}
+@keyframes title{
+    0%{ transform: scale(1);}
+    33%{transform: scale(1.05)}
+    66%{transform: scale(0.95)}
+    100%{transform: scale(1)}
+}
+.title{
+    position: absolute;
+    left: 40%;
+    text-align: center;
+    font-family: 'hegarty';
+    width: fit-content;
+    color: transparent;
+    background: linear-gradient(to right, #4D7327, #7fd529);
+    -webkit-background-clip: text;
+    z-index: 3;
+    animation: title 2s ease-in-out infinite forwards;
+}
+.image{
+    width: 350px;
+    object-fit: cover;
+    object-position: center bottom;
+    height: 450px;
+    border-radius: 20px;
+    z-index: -1;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.effect{
+    width: 360px;
+    height: 460px;
+    border-radius: 20px;
+    background-color: transparent;
+    position: relative;
+    box-shadow: 0px 0px 50px 10px #000000;
+    overflow: hidden;
+}
+.effect::before{
+    content: "";
+    background: conic-gradient(
+        from 140deg at 50% 50%,
+        transparent 0deg,
+        #4D7327 15deg,
+        transparent 90deg,
+        transparent 195deg,
+        #7fd529 195deg,
+        transparent 270deg,
+        transparent 375deg
+        );
+        width: 900px;
+    height: 700px;
+    position: absolute;
+    top: -20%;
+    left: -250px;
+    z-index: -2;
+    animation: rotateBg 5s ease-in-out infinite alternate forwards;
+}
+.effect::after{
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    width: 350px;
+    height: 450px;
+    z-index: -1;
+}
+.glow {
+    
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+}
+.glow::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 1000%;
+    background: conic-gradient(
+        from 140deg at 50% 50%,
+        transparent 0deg,
+        #4D7327 15deg,
+        transparent 90deg,
+        transparent 195deg,
+        #7fd529 195deg,
+        transparent 270deg,
+        transparent 375deg
+        );
+        filter: blur(52px);
+        opacity: 1;
+        width: 20vmax;
+        height: 30vmax;
+        z-index: -2;
+        animation: rotateBg 5s ease-in-out infinite alternate forwards;
+    }
+    .row{
+    margin-top: 250px;
+    padding: 4rem 8%;
+    display: flex;
+    gap: 150px;
+}
+.row--reverse{
+    margin-top: 0;
+    flex-direction: row-reverse;
+    gap: 470px;
+}
+.row1{
+   margin-top: 0;
+    padding: 4rem 8%;
+    display: flex;
+    gap: 150px; 
+}
+.h21{
+    width: 1000px;
+    color: transparent;
+    font-size: 40px;
+    font-family: 'tec';
+    background: linear-gradient(
+        to top, #4D7327, #b0cc92
+        );
+    -webkit-background-clip: text;
+    margin-bottom: 20px;
+    position: relative;
+    left: 20%;
+}
+.p{
+    width: 190%;
+    font-size: 30px;
+    height: fit-content;
+    font-family: 'inter';
+    font-weight: 500;
+}
+.p--reverse{
+    width: 250%;
+}
+.div1{
+    width: 300px;
+    height: fit-content;
+}
+.div1--reverse{
+    width: 300px;
+    position: relative;
+    left: -1000px;
+}
+.h2{
+    width: 250%;
+    color: transparent;
+    font-size: 40px;
+    font-family: 'tec';
+    background: linear-gradient(
+        to top, #4D7327, #b0cc92
+        );
+        -webkit-background-clip: text;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .h2--reverse{
+        width: 300%;
+    }
+    .image1{
+        width: 400px;
+        position: relative;
+        left: 0;
+        background: red;
+        mask-image: url("../../Learning/icons/Greek-god-2.svg");
+        -webkit-mask-image: url("../../Learning/icons/Greek-god-2.svg");
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
+}
+.shattering{
+    position: absolute;
+    top: 133%;
+    width: 400px;
+    height: 400px;
+    background-color: #07182e;
+    box-shadow: 24px 25px 50px -1px #000000;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.shattering::before{
+    content: "";
+    position: absolute;
+    transform: rotate(45deg);
+    top: -150px;
+    left: 150px;
+    width: 100px;
+    height: 700px;
+    background-color: rgba(255, 255, 255, 0.241);
+    z-index: 1;
+    animation: shattering 4s infinite;
+}
+.shattering::after{
+    content: "";
+    position: absolute;
+    transform: rotate(45deg);
+    top: -150px;
+    left: 150px;
+    width: 100px;
+    height: 700px;
+    background-color: rgba(255, 255, 255, 0.241);
+    z-index: 1;
+    animation: shattering 4s infinite;
+    animation-delay: 0.5s;
+}
+.heading1{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    top: 0;
+    gap: 10px;
+    z-index: 3;
+    background: grey;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: -6px 24px 50px -1px #000000;
+}
+.heading1 > .Himage{
+    width: 200px;
+    margin-right: 450px;
+}
+a{
+    display:flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    font-family: 'inter';
+    width: 100px;
+    height: 50px;
+    padding: 15px 12px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    top: 60px;
+    left: 250px;
+    text-decoration: none;
+    font-weight: bold;
+}
+a::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 13px;
+    background: linear-gradient(to right , #4D7327, #7fd529) ;
+    transform: scaleY(0);    
+    transform-origin: bottom; 
+    box-shadow: -6px 24px 50px -1px #000000;
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+a:hover{
+    color: white;
+}
+a:hover::before{
+    transform: scaleY(1);
+}
+.video{
+    width: 400px;
+    height: 600px;
+    border-radius: 25px;
+    box-shadow: -6px 24px 50px -1px #000000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 450px;
+    background-color: rgba(166, 156, 156, 0.527);
+    overflow: hidden;
+}
+.video > img{
+    filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.video img.active {
+    opacity: 0;
+}
+.video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.video.active video{
+    opacity: 1;
+}
+.video > h2{
+    color: white;
+    font-family: 'inter';
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+.video > h2.active{
+    transform: translateX(-320px);
+}
+.skills{
+    position: relative;
+    top: 20px;
+    left: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 750px;
+    height: 100px;
+    background-color: transparent;
+}
+.skills > button{
+    font-family: 'Trade';
+    background: transparent;
+    border-radius: 15px;
+    width: 110px;
+    height: 75px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.skills > button:hover{
+    transform: scale(1.1);
+}
+.skills > button:active{
+    transform: scale(0.9);
+}
+.skills > button > h2{
+    position: absolute;
+    top: 33%;
+    left: 20%;
+    font-size: 15px;
+    z-index: 2;
+}
+.skills > button::before{
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: -42px;
+    width: 200px;
+    height: 150px;
+    background: conic-gradient(
+        from 140deg at 50% 50%,
+        transparent 0deg,
+        #4D7327 15deg,
+        transparent 90deg,
+        transparent 195deg,
+        #6F8C51 195deg,
+        transparent 270deg,
+        transparent 375deg
+        );
+        z-index: -1;
+        animation: rotateBg 5s ease-in-out infinite alternate forwards;
+    }
+    
+    .skills > button::after{
+        content: "";
+        border-radius: 15px;
+        position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 103px;
+    height: 70px;
+    background: white;
+}
+.row2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.row2 > .div2 {
+    border-radius: 30px;
+    position: absolute;
+    left: 60px;
+    width: 90%;
+    height: 500px;
+    border: 2px solid #404040;
+    box-shadow: inset 0 0 25px 9px  #404040;
+}
+.row2 > .div2> h2{
+    width: 90%;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    color: transparent;
+    font-size: 40px;
+    font-family: 'tec';
+    background: linear-gradient(
+        to top, #4D7327, #b0cc92
+        );
+        -webkit-background-clip: text;
+        margin-bottom: 20px;
+    }
+    .row2 > .div2> p{
+        position: absolute;
+        top: 140px;
+        left: 100px;
+    width: 80%;
+    font-size: 30px;
+    height: fit-content;
+    font-family: 'inter';
+    font-weight: 500;
+}
+@media (max-width: 1023px) {
+
+}
+@media (max-width: 767px) {
+    .heading1{
+        width:100%;
+        gap: 50px;
+    }
+    .heading1 > .Himage{
+        width: 300px;
+    }
+    a{
+        left: -300px;
+        font-size: 22px;
+    }
+    .div1--reverse{
+        left: 0;
+    }
+    .shattering{
+        left: 800px;
+        top: 150%;
+    }
+    .row2 > .div2{
+        width: 1000px;
+        height: 650px;
+
+    }
+    .row2 > .div2> h2{
+        width: 800px;
+    }
+    .row2 > .div2> p{
+        width: 700px;
+    }
+}
