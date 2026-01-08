@@ -5,6 +5,6 @@ mode.addEventListener("click" , () => {
 })
 document.querySelectorAll('.btn1').forEach(btn => {
     btn.addEventListener("click", () => {
-        open(btn.dataset.link);
+        window.open(btn.dataset.link, "_blank" );
     });
 });
