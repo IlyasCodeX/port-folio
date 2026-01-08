@@ -9,19 +9,19 @@ body{
 }
 @font-face{
     font-family: 'hegarty';
-    src: url(../../Learning/fonts/BBHHegarty-Regular.ttf);
+    src: url(../Learning/fonts/BBHHegarty-Regular.ttf);
 }
 @font-face{
     font-family: 'tec';
-    src: url(../../Learning/fonts/BBHBartle-Regular.ttf);
+    src: url(../Learning/fonts/BBHBartle-Regular.ttf);
 }
 @font-face{
     font-family: 'inter';
-    src: url(../../Learning/fonts/InterTight-VariableFont_wght.ttf);
+    src: url(../Learning/fonts/InterTight-VariableFont_wght.ttf);
 }
 @font-face{
     font-family: 'Trade';
-    src: url(../../Learning/fonts/TradeWinds-Regular.ttf);
+    src: url(../Learning/fonts/TradeWinds-Regular.ttf);
 }
 @keyframes rotateBg {
     to {  transform: rotate(1080deg); }
@@ -203,8 +203,8 @@ body{
         position: relative;
         left: 0;
         background: red;
-        mask-image: url("../../Learning/icons/Greek-god-2.svg");
-        -webkit-mask-image: url("../../Learning/icons/Greek-god-2.svg");
+        mask-image: url("../Learning/icons/Greek-god-2.svg");
+        -webkit-mask-image: url("../Learning/icons/Greek-god-2.svg");
         mask-size: contain;
         mask-repeat: no-repeat;
         mask-position: center;
