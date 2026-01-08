@@ -294,7 +294,10 @@ a:hover::before{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    height: 30px;
 }
 @media (max-width: 1023px) {
     
@@ -349,6 +352,6 @@ a:hover::before{
     .design{
         position: absolute;
         left: 35%;
-        top: 70%;
+        top: 113%;
     }
     }
